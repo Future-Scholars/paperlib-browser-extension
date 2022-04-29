@@ -1,0 +1,22 @@
+{
+    "name": "Paperlib",
+    "description": "Chrome Extension for Paperlib.",
+    "version": "0.0.3",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "action": {
+        "default_icon": "128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "notifications",
+        "scripting"
+    ]
+}
