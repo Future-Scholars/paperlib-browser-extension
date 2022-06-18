@@ -6,6 +6,13 @@
     "background": {
         "service_worker": "background.js"
     },
+    "content_scripts": [
+        {
+            "matches": ["*://scholar.google.com/*"],
+            "js": ["googlescholar.js"],
+            "run_at": "document_idle"
+        }
+    ],
     "icons": {
         "16": "icon16.png",
         "48": "icon48.png",
@@ -16,7 +23,6 @@
     },
     "permissions": [
         "activeTab",
-        "notifications",
         "scripting"
     ]
 }
