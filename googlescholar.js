@@ -14,6 +14,7 @@ function appendAddButton() {
       chrome.runtime.sendMessage(
         {
           action: "add",
+          url: window.location.href,
           document: element.outerHTML,
         },
         function (response) {

@@ -1,10 +1,6 @@
 let webSocket = new WebSocket("ws://localhost:21992/");
-if (webSocket.readyState !== 0 || webSocket.readyState !== 1) {
-  console.log("Paperlib is not running");
-  chrome.action.setBadgeText({ text: "!" });
-}
 
-chrome.action.onClicked.addListener((tab) => {
+chrome.action.onClicked.addListener(async (tab) => {
   // Show processing notification
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
@@ -120,20 +116,25 @@ chrome.action.onClicked.addListener((tab) => {
     }
   };
 
+  const cookies = await chrome.cookies.getAll({ url });
+
   chrome.scripting.executeScript(
     {
       target: { tabId: tab.id },
       function: () => {
-        return document.documentElement.innerHTML;
+        return {
+          doc: document.documentElement.innerHTML,
+        };
       },
     },
     (results) => {
-      const doc = results[0].result;
+      const result = results[0].result;
       if (webSocket.readyState === 1) {
         webSocket.send(
           JSON.stringify({
             url: url,
-            document: doc,
+            document: result.doc,
+            cookies: cookies,
           })
         );
         chrome.action.setBadgeText({ text: "" });
@@ -142,7 +143,8 @@ chrome.action.onClicked.addListener((tab) => {
           webSocket.send(
             JSON.stringify({
               url: url,
-              document: doc,
+              document: result.doc,
+              cookies: cookies,
             })
           );
         };
