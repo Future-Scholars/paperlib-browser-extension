@@ -1,0 +1,10 @@
+{
+  "extensionDescription": {
+    "description": "Chrome extension description",
+    "message": "Chrome extension for Paperlib"
+  },
+  "extensionName": {
+    "description": "Chrome extension name",
+    "message": "Paperlib"
+  }
+}
