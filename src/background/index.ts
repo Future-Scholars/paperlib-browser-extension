@@ -4,7 +4,105 @@ self.onerror = function (message, source, lineno, colno, error) {
   )
 }
 
-let webSocket = new WebSocket('ws://localhost:21992/')
+/**
+ * WebSocket communication class
+ * We use this class to communicate with the app
+ * The message format from here is:
+ * {
+ *    id: number,
+ *    type: string,
+ *    value: any
+ * }
+ * The message format from the app is:
+ * {
+ *   id: number,
+ *   value: any,
+ * }
+ */
+class WebSocketComm {
+  private webSocket: WebSocket
+  private timeout: number
+  private responseHandler: {
+    [id: string]: (response: { id: string; value: any }) => void
+  }
+  private id: number
+
+  constructor(url: string) {
+    this.webSocket = new WebSocket(url)
+    this.timeout = 10000
+    this.responseHandler = {}
+
+    this.webSocket.onopen = () => {
+      console.log('WebSocket is open.')
+    }
+
+    this.webSocket.onmessage = (message) => {
+      const response = JSON.parse(message.data)
+      if (response.id in this.responseHandler) {
+        this.responseHandler[response.id](response)
+      }
+    }
+    this.id = 1
+  }
+
+  reconnect() {
+    this.webSocket = new WebSocket(this.webSocket.url)
+
+    this.webSocket.onopen = () => {
+      console.log('WebSocket is open.')
+    }
+
+    this.webSocket.onmessage = (message) => {
+      const response = JSON.parse(message.data)
+      if (response.id in this.responseHandler) {
+        this.responseHandler[response.id](response)
+      }
+    }
+  }
+
+  async send(
+    message: { type: string; value: any },
+    responseHandler?: (value: any) => void
+  ) {
+    return new Promise(async (resolve) => {
+      const start = Date.now()
+      while (
+        this.webSocket.readyState !== 1 &&
+        Date.now() - start < this.timeout
+      ) {
+        if (this.webSocket.readyState === 1) {
+          break
+        }
+        if (
+          this.webSocket.readyState === 2 ||
+          this.webSocket.readyState === 3
+        ) {
+          this.reconnect()
+        }
+        await new Promise((resolve) => setTimeout(resolve, 100))
+      }
+
+      if (this.webSocket.readyState !== 1) {
+        console.error(`WebSocket is not ready: ${this.webSocket.readyState}`)
+        return { success: false, message: 'WebSocket is not ready!' }
+      }
+
+      const payload = {
+        id: this.id++,
+        ...message,
+      }
+
+      if (responseHandler) {
+        this.responseHandler[payload.id] = responseHandler
+      }
+
+      this.webSocket.send(JSON.stringify(payload))
+    })
+  }
+}
+
+let webSocket = new WebSocketComm('ws://localhost:21992/')
+
 let DOWNLOADPDF = true
 let SELECTEDTAGS: any[] = []
 
@@ -77,26 +175,7 @@ async function importToApp(data: {
   cookies: any
 }) {
   return new Promise(async (resolve) => {
-    // ========================
-    // Connect to WebSocket
-    if (webSocket.readyState === 3 || webSocket.readyState === 4) {
-      webSocket = new WebSocket('ws://localhost:21992/')
-    }
-    const timeout = 5000
-    const start = Date.now()
-    while (webSocket.readyState !== 1 && Date.now() - start < timeout) {
-      if (webSocket.readyState === 2) {
-        break
-      }
-      await new Promise((resolve) => setTimeout(resolve, 100))
-    }
-
-    if (webSocket.readyState !== 1) {
-      console.error('WebSocket is not ready')
-      return { success: false, message: 'WebSocket is not ready!' }
-    }
-
-    const message = JSON.stringify({
+    const message = {
       type: 'import',
       value: {
         url: data.url,
@@ -107,42 +186,28 @@ async function importToApp(data: {
           tags: SELECTEDTAGS,
         },
       },
-    })
-
-    // ========================
-    // Response handler
-    webSocket.onmessage = (message) => {
-      const response = JSON.parse(message.data)
-      if (response.response === 'no-avaliable-importer') {
-        resolve({ success: false, message: 'No avaliable importer.' })
-      } else if (response.response === 'successful') {
-        resolve({ success: true, message: '' })
-      }
     }
 
     // ========================
     // Send message
-    webSocket.send(message)
+    webSocket.send(message, (response: { id: string; value: any }) => {
+      resolve(response.value)
+    })
   })
 }
 
 async function getCategorizers(type: 'tags' | 'folders') {
   return new Promise((resolve) => {
-    const message = JSON.stringify({
+    const message = {
       type: 'getCategorizers',
       value: type,
-    })
-
-    // ========================
-    // Response handler
-    webSocket.onmessage = (message) => {
-      const response = JSON.parse(message.data)
-      resolve(response.response)
     }
 
     // ========================
     // Send message
-    webSocket.send(message)
+    webSocket.send(message, (response: { id: string; value: any }) => {
+      resolve(response.value)
+    })
   })
 }
 

@@ -16,7 +16,7 @@ const onImportClicked = async () => {
   processingMsg.value = 'Importing...'
   processing.value = true
   const successStat = await chrome.runtime.sendMessage({ type: 'import' })
-  if (successStat.success) {
+  if (successStat === 'successful') {
     processingMsg.value = 'Imported!'
     setTimeout(() => {
       processingMsg.value = 'Import'
@@ -24,7 +24,7 @@ const onImportClicked = async () => {
 
     processing.value = false
   } else {
-    processingMsg.value = successStat.message
+    processingMsg.value = successStat
     setTimeout(() => {
       processingMsg.value = 'Import'
     }, 2000)
