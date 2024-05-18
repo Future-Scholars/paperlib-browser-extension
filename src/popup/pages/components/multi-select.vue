@@ -46,8 +46,8 @@ const toggle = (value: string) => {
       class="text-xs px-1 py-0.5 rounded flex mb-1 mx-0.5 select-none cursor-pointer"
       :class="
         modelValue.includes(value)
-          ? 'bg-neutral-500 dark:bg-neutral-300 text-neutral-100'
-          : 'bg-neutral-300 dark:bg-neutral-600 text-neutral-500'
+          ? 'bg-neutral-500 text-neutral-100'
+          : 'bg-neutral-300 text-neutral-500'
       "
       @click="toggle(value)"
     >
