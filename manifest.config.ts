@@ -35,7 +35,7 @@ export default defineManifest(async (env) => ({
     },
   ],
   host_permissions: ['*://*/*'],
-  permissions: ['tabs', 'scripting', 'cookies'],
+  permissions: ['activeTab', 'scripting', 'cookies'],
   web_accessible_resources: [],
   icons: {
     '16': 'icon16.png',
