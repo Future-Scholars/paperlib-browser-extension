@@ -43,4 +43,9 @@ export default defineManifest(async (env) => ({
   content_security_policy: {
     extension_pages: "script-src 'self'; object-src 'self';",
   },
+  browser_specific_settings: {
+    gecko: {
+      id: '{92db6eca-62e8-4526-8ea7-cda849ca05b9}',
+    },
+  },
 }))
