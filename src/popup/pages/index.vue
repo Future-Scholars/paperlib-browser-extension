@@ -2,7 +2,6 @@
 import Toggle from './components/toggle.vue'
 import Spinner from './components/spinner.vue'
 import MultiselectBox from './components/multi-select.vue'
-import { on } from 'events'
 
 const processing = ref(false)
 const processingMsg = ref('Import')
@@ -50,6 +49,8 @@ const onTagsChange = (value: string[]) => {
   })
 }
 
+const logo = ref('light')
+
 onMounted(async () => {
   const value = await chrome.runtime.sendMessage({ type: 'getDownloadPDF' })
   downloadPDF.value = value
@@ -63,15 +64,33 @@ onMounted(async () => {
     type: 'getSelectedTags',
   })
   selectTags.value = selectTagsRes
+
+  const isDarkMode = await chrome.runtime.sendMessage({ type: 'getBrowserTheme' })
+  console.log(isDarkMode)
+  logo.value = isDarkMode
+    ? 'dark'
+    : 'light'
+  if (isDarkMode) {
+    console.log('dark')
+    document.body.classList.add('dark')
+  } else {
+    document.body.classList.remove('dark')
+  }
 })
 </script>
 
 <template>
-  <div class="flex flex-col py-3 px-4">
+  <div class="flex flex-col py-3 px-4 dark:bg-neutral-800 dark:text-neutral-100">
     <div class="flex space-x-2">
       <img
         class="w-4 my-auto"
         src="../../assets/logo-light.png"
+        v-if="logo === 'light'"
+      />
+      <img
+        class="w-4 my-auto"
+        src="../../assets/logo-dark.png"
+        v-else
       />
       <span class="my-auto text-lg">PAPERLIB</span>
     </div>
@@ -92,21 +111,20 @@ onMounted(async () => {
       :options="
         (tags ? tags : [])
           .filter((tag: any) => tag.name !== 'Tags')
-          .map((tag: any) => tag.name)
       "
       @event:change="onTagsChange"
     />
 
     <div class="my-2"></div>
     <button
-      class="flex h-8 bg-neutral-200 rounded-md hover:bg-neutral-300 transition-colors cursor-pointer duration-75 justify-center space-x-2"
+      class="flex h-8 bg-neutral-200 dark:bg-neutral-700 rounded-md hover:bg-neutral-300 hover:dark:bg-neutral-600 transition-colors cursor-pointer duration-75 justify-center space-x-2"
       @click="onImportClicked"
       :disabled="processing"
     >
       <div class="w-3.5 h-3.5 my-auto"></div>
       <span
         class="my-auto select-none text-xs"
-        :class="processing ? 'text-neutral-400' : 'text-neutral-700'"
+        :class="processing ? 'text-neutral-400' : 'text-neutral-700 dark:text-neutral-100'"
       >
         {{ processingMsg }}
       </span>
