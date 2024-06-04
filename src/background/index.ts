@@ -131,6 +131,9 @@ async function messageHandler(msg: any, sender: any, res: any) {
     SELECTEDTAGS = msg.value
   } else if (msg.type === 'getSelectedTags') {
     res(SELECTEDTAGS)
+  } else if (msg.type === 'getBrowserTheme') {
+    const isDarkMode = await getBrowserTheme()
+    res(isDarkMode)
   }
 }
 
@@ -211,4 +214,39 @@ async function getCategorizers(type: 'tags' | 'folders') {
   })
 }
 
-export {}
+async function getBrowserTheme() {
+  const tabInfo = (await new Promise((resolve) => {
+    chrome.tabs.query(
+      {
+        active: true,
+        lastFocusedWindow: true,
+      },
+      function (tabs) {
+        // and use that tab to fill in out title and url
+        var tab = tabs[0]
+        resolve({ url: tab.url as string, tabId: tab.id as number })
+      }
+    )
+  })) as { url: string; tabId: number }
+
+  const isDarkMode = (await new Promise((resolve) => {
+    chrome.scripting.executeScript(
+      {
+        target: { tabId: tabInfo.tabId },
+        func: () => {
+          // check if dark mode is enabled
+          const darkMode = window.matchMedia('(prefers-color-scheme: dark)')
+            .matches
+          return darkMode
+        },
+      },
+      (result) => {
+        resolve(result[0].result)
+      }
+    )
+  })) as boolean
+
+  return isDarkMode
+}
+
+export { }

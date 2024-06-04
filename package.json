@@ -2,7 +2,7 @@
   "displayName": "Paperlib Extension",
   "name": "paperlib-browser-extension",
   "description": "Paperlib Firefox Extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/Future-Scholars/paperlib-browser-extension"
