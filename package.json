@@ -2,7 +2,7 @@
   "displayName": "Paperlib Extension",
   "name": "paperlib-browser-extension",
   "description": "Paperlib Chrome Extension",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Future-Scholars/paperlib-browser-extension"
