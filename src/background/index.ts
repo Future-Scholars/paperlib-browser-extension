@@ -1,3 +1,5 @@
+import packageJson from '../../package.json'
+
 self.onerror = function (message, source, lineno, colno, error) {
   console.info(
     `Error: ${message}\nSource: ${source}\nLine: ${lineno}\nColumn: ${colno}\nError object: ${error}`
@@ -33,13 +35,15 @@ class WebSocketComm {
     this.responseHandler = {}
 
     this.webSocket.onopen = () => {
-      console.log('WebSocket is open.')
+      this.send({ type: 'version', value: packageJson.version })
     }
 
     this.webSocket.onmessage = (message) => {
       const response = JSON.parse(message.data)
       if (response.id in this.responseHandler) {
         this.responseHandler[response.id](response)
+      } else if (response.type === "download") {
+        download(response.id, response.value)
       }
     }
     this.id = 1
@@ -50,19 +54,23 @@ class WebSocketComm {
 
     this.webSocket.onopen = () => {
       console.log('WebSocket is open.')
+      this.send({ type: 'version', value: packageJson.version })
     }
 
     this.webSocket.onmessage = (message) => {
       const response = JSON.parse(message.data)
       if (response.id in this.responseHandler) {
         this.responseHandler[response.id](response)
+      } else if (response.type === "download") {
+        download(response.id, response.value)
       }
     }
   }
 
   async send(
-    message: { type: string; value: any },
-    responseHandler?: (value: any) => void
+    message: { id?: string, type: string; value: any },
+    responseHandler?: (value: any) => void,
+    id?: number
   ) {
     return new Promise(async (resolve) => {
       const start = Date.now()
@@ -88,7 +96,7 @@ class WebSocketComm {
       }
 
       const payload = {
-        id: this.id++,
+        id: id ? id : this.id++,
         ...message,
       }
 
@@ -152,30 +160,72 @@ async function getTabData() {
     )
   })) as { url: string; tabId: number }
   const url = tabInfo.url
-  const html = (await new Promise((resolve) => {
+  const result = (await new Promise((resolve) => {
     chrome.scripting.executeScript(
       {
         target: { tabId: tabInfo.tabId },
         func: () => {
           return {
             doc: document.documentElement.innerHTML,
+            userAgent: navigator.userAgent,
           }
         },
       },
       (result) => {
-        resolve(result[0].result.doc)
+        resolve(result[0].result)
       }
     )
-  })) as string
+  })) as { doc: string; userAgent: string };
+  const html = result.doc
+
   const cookies = await chrome.cookies.getAll({ url })
 
-  return { url, document: html, cookies }
+  return { url, document: html, cookies, userAgent: result.userAgent }
+}
+
+async function download(id: string, url: string) {
+  const downloadedFilename = await new Promise((resolve) => {
+    let filename = `${Math.random().toString(36).substring(7)}.pdf`
+
+    chrome.downloads.onChanged.addListener(function (downloadDelta) {
+      if (downloadDelta.state && downloadDelta.state.current === 'complete') {
+        // Download is finished
+        console.log('Download finished:', downloadDelta.id);
+        chrome.downloads.search({ id: downloadDelta.id }, (items) => {
+          console.log('Downloaded file:', items[0].filename);
+          resolve(items[0].filename)
+        })
+      } else if (downloadDelta.error) {
+        // Download error
+        console.error('Download error:', downloadDelta.error);
+        resolve("")
+      } else if (downloadDelta.state && downloadDelta.state.current === 'interrupted') {
+        // Download interrupted
+        console.error('Download interrupted:', downloadDelta);
+        resolve("")
+      }
+    });
+
+    chrome.downloads.download(
+      {
+        url,
+        filename,
+        saveAs: false,
+        conflictAction: 'overwrite',
+      }
+    )
+  })
+
+  console.log('Reply downloaded file:', downloadedFilename);
+
+  webSocket.send({ id: id, type: 'reply', value: downloadedFilename });
 }
 
 async function importToApp(data: {
   url: string
   document: string
-  cookies: any
+  cookies: any,
+  userAgent: string
 }) {
   return new Promise(async (resolve) => {
     const message = {
@@ -184,6 +234,7 @@ async function importToApp(data: {
         url: data.url,
         document: data.document,
         cookies: data.cookies,
+        userAgent: data.userAgent,
         options: {
           downloadPDF: DOWNLOADPDF,
           tags: SELECTEDTAGS,
