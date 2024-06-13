@@ -184,41 +184,8 @@ async function getTabData() {
 }
 
 async function download(id: string, url: string) {
-  const downloadedFilename = await new Promise((resolve) => {
-    let filename = `${Math.random().toString(36).substring(7)}.pdf`
-
-    chrome.downloads.onChanged.addListener(function (downloadDelta) {
-      if (downloadDelta.state && downloadDelta.state.current === 'complete') {
-        // Download is finished
-        console.log('Download finished:', downloadDelta.id);
-        chrome.downloads.search({ id: downloadDelta.id }, (items) => {
-          console.log('Downloaded file:', items[0].filename);
-          resolve(items[0].filename)
-        })
-      } else if (downloadDelta.error) {
-        // Download error
-        console.error('Download error:', downloadDelta.error);
-        resolve("")
-      } else if (downloadDelta.state && downloadDelta.state.current === 'interrupted') {
-        // Download interrupted
-        console.error('Download interrupted:', downloadDelta);
-        resolve("")
-      }
-    });
-
-    chrome.downloads.download(
-      {
-        url,
-        filename,
-        saveAs: false,
-        conflictAction: 'overwrite',
-      }
-    )
-  })
-
-  console.log('Reply downloaded file:', downloadedFilename);
-
-  webSocket.send({ id: id, type: 'reply', value: downloadedFilename });
+  // Doesn't work in Safari
+  webSocket.send({ id: id, type: 'reply', value: "" });
 }
 
 async function importToApp(data: {

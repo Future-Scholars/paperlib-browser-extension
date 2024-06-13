@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C39583312C1B834600C19D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39583302C1B834600C19D1B /* AppDelegate.swift */; };
+		C39583342C1B834600C19D1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C39583332C1B834600C19D1B /* Base */; };
+		C39583462C1B834600C19D1B /* Paperlib Extension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C39583452C1B834600C19D1B /* Paperlib Extension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C395834D2C1B834600C19D1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C39583102C1B834500C19D1B /* Base */; };
+		C395834F2C1B834600C19D1B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C39583112C1B834500C19D1B /* Icon.png */; };
+		C39583512C1B834600C19D1B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C39583122C1B834500C19D1B /* Style.css */; };
+		C39583532C1B834600C19D1B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C39583132C1B834500C19D1B /* Script.js */; };
+		C39583552C1B834600C19D1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39583142C1B834500C19D1B /* ViewController.swift */; };
+		C39583572C1B834600C19D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39583152C1B834600C19D1B /* Assets.xcassets */; };
+		C39583592C1B834600C19D1B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39583172C1B834600C19D1B /* SafariWebExtensionHandler.swift */; };
+		C39583722C1B834600C19D1B /* icon16.png in Resources */ = {isa = PBXBuildFile; fileRef = C395836B2C1B834600C19D1B /* icon16.png */; };
+		C39583732C1B834600C19D1B /* service-worker-loader.js in Resources */ = {isa = PBXBuildFile; fileRef = C395836C2C1B834600C19D1B /* service-worker-loader.js */; };
+		C39583742C1B834600C19D1B /* icon48.png in Resources */ = {isa = PBXBuildFile; fileRef = C395836D2C1B834600C19D1B /* icon48.png */; };
+		C39583752C1B834600C19D1B /* icon128.png in Resources */ = {isa = PBXBuildFile; fileRef = C395836E2C1B834600C19D1B /* icon128.png */; };
+		C39583762C1B834600C19D1B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C395836F2C1B834600C19D1B /* manifest.json */; };
+		C39583772C1B834600C19D1B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = C39583702C1B834600C19D1B /* assets */; };
+		C39583782C1B834600C19D1B /* src in Resources */ = {isa = PBXBuildFile; fileRef = C39583712C1B834600C19D1B /* src */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C39583472C1B834600C19D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C39583092C1B834500C19D1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39583442C1B834600C19D1B;
+			remoteInfo = "Paperlib Extension Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C39583662C1B834600C19D1B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C39583462C1B834600C19D1B /* Paperlib Extension Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C39583102C1B834500C19D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		C39583112C1B834500C19D1B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C39583122C1B834500C19D1B /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		C39583132C1B834500C19D1B /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		C39583142C1B834500C19D1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C39583152C1B834600C19D1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C39583172C1B834600C19D1B /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		C395832E2C1B834600C19D1B /* Paperlib Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paperlib Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39583302C1B834600C19D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C39583332C1B834600C19D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C39583352C1B834600C19D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39583362C1B834600C19D1B /* Paperlib Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Paperlib Extension.entitlements"; sourceTree = "<group>"; };
+		C39583452C1B834600C19D1B /* Paperlib Extension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Paperlib Extension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C395834A2C1B834600C19D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C395834B2C1B834600C19D1B /* Paperlib Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Paperlib Extension.entitlements"; sourceTree = "<group>"; };
+		C395836B2C1B834600C19D1B /* icon16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon16.png; path = ../../dist/icon16.png; sourceTree = "<group>"; };
+		C395836C2C1B834600C19D1B /* service-worker-loader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "service-worker-loader.js"; path = "../../dist/service-worker-loader.js"; sourceTree = "<group>"; };
+		C395836D2C1B834600C19D1B /* icon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon48.png; path = ../../dist/icon48.png; sourceTree = "<group>"; };
+		C395836E2C1B834600C19D1B /* icon128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon128.png; path = ../../dist/icon128.png; sourceTree = "<group>"; };
+		C395836F2C1B834600C19D1B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../dist/manifest.json; sourceTree = "<group>"; };
+		C39583702C1B834600C19D1B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../dist/assets; sourceTree = "<group>"; };
+		C39583712C1B834600C19D1B /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../dist/src; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C395832B2C1B834600C19D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39583422C1B834600C19D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C39583082C1B834500C19D1B = {
+			isa = PBXGroup;
+			children = (
+				C395830D2C1B834500C19D1B /* Shared (App) */,
+				C39583162C1B834600C19D1B /* Shared (Extension) */,
+				C395832F2C1B834600C19D1B /* macOS (App) */,
+				C39583492C1B834600C19D1B /* macOS (Extension) */,
+				C395831D2C1B834600C19D1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C395830D2C1B834500C19D1B /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C39583142C1B834500C19D1B /* ViewController.swift */,
+				C39583152C1B834600C19D1B /* Assets.xcassets */,
+				C395830E2C1B834500C19D1B /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		C395830E2C1B834500C19D1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C395830F2C1B834500C19D1B /* Main.html */,
+				C39583112C1B834500C19D1B /* Icon.png */,
+				C39583122C1B834500C19D1B /* Style.css */,
+				C39583132C1B834500C19D1B /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C39583162C1B834600C19D1B /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C395836A2C1B834600C19D1B /* Resources */,
+				C39583172C1B834600C19D1B /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		C395831D2C1B834600C19D1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C395832E2C1B834600C19D1B /* Paperlib Extension.app */,
+				C39583452C1B834600C19D1B /* Paperlib Extension Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C395832F2C1B834600C19D1B /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C39583302C1B834600C19D1B /* AppDelegate.swift */,
+				C39583322C1B834600C19D1B /* Main.storyboard */,
+				C39583352C1B834600C19D1B /* Info.plist */,
+				C39583362C1B834600C19D1B /* Paperlib Extension.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		C39583492C1B834600C19D1B /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C395834A2C1B834600C19D1B /* Info.plist */,
+				C395834B2C1B834600C19D1B /* Paperlib Extension.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		C395836A2C1B834600C19D1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C395836B2C1B834600C19D1B /* icon16.png */,
+				C395836C2C1B834600C19D1B /* service-worker-loader.js */,
+				C395836D2C1B834600C19D1B /* icon48.png */,
+				C395836E2C1B834600C19D1B /* icon128.png */,
+				C395836F2C1B834600C19D1B /* manifest.json */,
+				C39583702C1B834600C19D1B /* assets */,
+				C39583712C1B834600C19D1B /* src */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C395832D2C1B834600C19D1B /* Paperlib Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39583672C1B834600C19D1B /* Build configuration list for PBXNativeTarget "Paperlib Extension (macOS)" */;
+			buildPhases = (
+				C395832A2C1B834600C19D1B /* Sources */,
+				C395832B2C1B834600C19D1B /* Frameworks */,
+				C395832C2C1B834600C19D1B /* Resources */,
+				C39583662C1B834600C19D1B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C39583482C1B834600C19D1B /* PBXTargetDependency */,
+			);
+			name = "Paperlib Extension (macOS)";
+			productName = "Paperlib Extension (macOS)";
+			productReference = C395832E2C1B834600C19D1B /* Paperlib Extension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C39583442C1B834600C19D1B /* Paperlib Extension Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39583632C1B834600C19D1B /* Build configuration list for PBXNativeTarget "Paperlib Extension Extension (macOS)" */;
+			buildPhases = (
+				C39583412C1B834600C19D1B /* Sources */,
+				C39583422C1B834600C19D1B /* Frameworks */,
+				C39583432C1B834600C19D1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paperlib Extension Extension (macOS)";
+			productName = "Paperlib Extension Extension (macOS)";
+			productReference = C39583452C1B834600C19D1B /* Paperlib Extension Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C39583092C1B834500C19D1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C395832D2C1B834600C19D1B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					C39583442C1B834600C19D1B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = C395830C2C1B834500C19D1B /* Build configuration list for PBXProject "Paperlib Extension" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C39583082C1B834500C19D1B;
+			productRefGroup = C395831D2C1B834600C19D1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C395832D2C1B834600C19D1B /* Paperlib Extension (macOS) */,
+				C39583442C1B834600C19D1B /* Paperlib Extension Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C395832C2C1B834600C19D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C395834F2C1B834600C19D1B /* Icon.png in Resources */,
+				C39583512C1B834600C19D1B /* Style.css in Resources */,
+				C39583342C1B834600C19D1B /* Base in Resources */,
+				C39583532C1B834600C19D1B /* Script.js in Resources */,
+				C39583572C1B834600C19D1B /* Assets.xcassets in Resources */,
+				C395834D2C1B834600C19D1B /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39583432C1B834600C19D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39583722C1B834600C19D1B /* icon16.png in Resources */,
+				C39583732C1B834600C19D1B /* service-worker-loader.js in Resources */,
+				C39583762C1B834600C19D1B /* manifest.json in Resources */,
+				C39583772C1B834600C19D1B /* assets in Resources */,
+				C39583752C1B834600C19D1B /* icon128.png in Resources */,
+				C39583782C1B834600C19D1B /* src in Resources */,
+				C39583742C1B834600C19D1B /* icon48.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C395832A2C1B834600C19D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39583552C1B834600C19D1B /* ViewController.swift in Sources */,
+				C39583312C1B834600C19D1B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39583412C1B834600C19D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39583592C1B834600C19D1B /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C39583482C1B834600C19D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C39583442C1B834600C19D1B /* Paperlib Extension Extension (macOS) */;
+			targetProxy = C39583472C1B834600C19D1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C395830F2C1B834500C19D1B /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39583102C1B834500C19D1B /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		C39583322C1B834600C19D1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39583332C1B834600C19D1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C395835A2C1B834600C19D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C395835B2C1B834600C19D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C39583642C1B834600C19D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Paperlib Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G866JUZ55;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Paperlib Extension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FutureScholars.Paperlib-Extension";
+				PRODUCT_NAME = "Paperlib Extension Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C39583652C1B834600C19D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Paperlib Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G866JUZ55;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Paperlib Extension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FutureScholars.Paperlib-Extension";
+				PRODUCT_NAME = "Paperlib Extension Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C39583682C1B834600C19D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Paperlib Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G866JUZ55;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Paperlib Extension";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FutureScholars.Paperlib-Extension";
+				PRODUCT_NAME = "Paperlib Extension";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C39583692C1B834600C19D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Paperlib Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G866JUZ55;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Paperlib Extension";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FutureScholars.Paperlib-Extension";
+				PRODUCT_NAME = "Paperlib Extension";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C395830C2C1B834500C19D1B /* Build configuration list for PBXProject "Paperlib Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C395835A2C1B834600C19D1B /* Debug */,
+				C395835B2C1B834600C19D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39583632C1B834600C19D1B /* Build configuration list for PBXNativeTarget "Paperlib Extension Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39583642C1B834600C19D1B /* Debug */,
+				C39583652C1B834600C19D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39583672C1B834600C19D1B /* Build configuration list for PBXNativeTarget "Paperlib Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39583682C1B834600C19D1B /* Debug */,
+				C39583692C1B834600C19D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C39583092C1B834500C19D1B /* Project object */;
+}
