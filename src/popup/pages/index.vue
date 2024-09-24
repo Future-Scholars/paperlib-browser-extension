@@ -8,6 +8,7 @@ const processingMsg = ref('Import')
 const downloadPDF = ref(true)
 const tags = ref([])
 const folders = ref([])
+const showingTags = ref([])
 const selectTags = ref([])
 const selectFolders = ref([])
 
@@ -51,12 +52,21 @@ const onTagsChange = (value: string[]) => {
 
 const logo = ref('light')
 
+const tagSearchText = ref('')
+
+watch(tagSearchText, (value) => {
+  const tagsRes = tags.value.filter((tag: any) => tag.name.toLowerCase().includes(value.toLowerCase()))
+  showingTags.value = tagsRes
+})
+
+
 onMounted(async () => {
   const value = await chrome.runtime.sendMessage({ type: 'getDownloadPDF' })
   downloadPDF.value = value
 
   const tagsRes = await chrome.runtime.sendMessage({ type: 'getTags' })
   tags.value = tagsRes
+  showingTags.value = tagsRes
   const foldersRes = await chrome.runtime.sendMessage({ type: 'getFolders' })
   folders.value = foldersRes
 
@@ -97,7 +107,7 @@ onMounted(async () => {
     <div class="my-2"></div>
     <Toggle
       title="Download PDF"
-      info="weather to download PDF or not"
+      info="whether to download PDF or not"
       :enable="downloadPDF"
       @event:change="onDownloadPDFChanged"
     />
@@ -105,11 +115,12 @@ onMounted(async () => {
     <div class="mb-1">
       <span class="text-xs font-semibold">Import with Tags</span>
     </div>
+    <input type="text" class="w-full h-8 mb-2 text-xs border-none bg-neutral-200 dark:bg-neutral-700 rounded-md px-2" placeholder="Search tags" v-model="tagSearchText" />
     <MultiselectBox
       id="paper-edit-view-tags-input"
       :model-value="selectTags.map((tag: any) => tag.name)"
       :options="
-        (tags ? tags : [])
+        (showingTags ? showingTags : [])
           .filter((tag: any) => tag.name !== 'Tags')
       "
       @event:change="onTagsChange"

@@ -286,13 +286,12 @@ async function getBrowserTheme() {
         target: { tabId: tabInfo.tabId },
         func: () => {
           // check if dark mode is enabled
-          const darkMode = window.matchMedia('(prefers-color-scheme: dark)')
-            .matches
+          const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
           return darkMode
         },
       },
       (result) => {
-        resolve(result[0].result)
+        resolve(result ? result[0].result : false)
       }
     )
   })) as boolean
