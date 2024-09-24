@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C39583312C1B834600C19D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39583302C1B834600C19D1B /* AppDelegate.swift */; };
-		C39583342C1B834600C19D1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C39583332C1B834600C19D1B /* Base */; };
-		C39583462C1B834600C19D1B /* Paperlib Extension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C39583452C1B834600C19D1B /* Paperlib Extension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C395834D2C1B834600C19D1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C39583102C1B834500C19D1B /* Base */; };
-		C395834F2C1B834600C19D1B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C39583112C1B834500C19D1B /* Icon.png */; };
-		C39583512C1B834600C19D1B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C39583122C1B834500C19D1B /* Style.css */; };
-		C39583532C1B834600C19D1B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C39583132C1B834500C19D1B /* Script.js */; };
-		C39583552C1B834600C19D1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39583142C1B834500C19D1B /* ViewController.swift */; };
-		C39583572C1B834600C19D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39583152C1B834600C19D1B /* Assets.xcassets */; };
-		C39583592C1B834600C19D1B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39583172C1B834600C19D1B /* SafariWebExtensionHandler.swift */; };
-		C39583722C1B834600C19D1B /* icon16.png in Resources */ = {isa = PBXBuildFile; fileRef = C395836B2C1B834600C19D1B /* icon16.png */; };
-		C39583732C1B834600C19D1B /* service-worker-loader.js in Resources */ = {isa = PBXBuildFile; fileRef = C395836C2C1B834600C19D1B /* service-worker-loader.js */; };
-		C39583742C1B834600C19D1B /* icon48.png in Resources */ = {isa = PBXBuildFile; fileRef = C395836D2C1B834600C19D1B /* icon48.png */; };
-		C39583752C1B834600C19D1B /* icon128.png in Resources */ = {isa = PBXBuildFile; fileRef = C395836E2C1B834600C19D1B /* icon128.png */; };
-		C39583762C1B834600C19D1B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C395836F2C1B834600C19D1B /* manifest.json */; };
-		C39583772C1B834600C19D1B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = C39583702C1B834600C19D1B /* assets */; };
-		C39583782C1B834600C19D1B /* src in Resources */ = {isa = PBXBuildFile; fileRef = C39583712C1B834600C19D1B /* src */; };
+		C357F7712CA2CD9F005E1950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357F7702CA2CD9F005E1950 /* AppDelegate.swift */; };
+		C357F7742CA2CD9F005E1950 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C357F7732CA2CD9F005E1950 /* Base */; };
+		C357F7862CA2CD9F005E1950 /* Paperlib Extension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C357F7852CA2CD9F005E1950 /* Paperlib Extension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C357F78D2CA2CD9F005E1950 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C357F7502CA2CD9E005E1950 /* Base */; };
+		C357F78F2CA2CD9F005E1950 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C357F7512CA2CD9E005E1950 /* Icon.png */; };
+		C357F7912CA2CD9F005E1950 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C357F7522CA2CD9E005E1950 /* Style.css */; };
+		C357F7932CA2CD9F005E1950 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C357F7532CA2CD9E005E1950 /* Script.js */; };
+		C357F7952CA2CD9F005E1950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357F7542CA2CD9E005E1950 /* ViewController.swift */; };
+		C357F7972CA2CD9F005E1950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357F7552CA2CD9F005E1950 /* Assets.xcassets */; };
+		C357F7992CA2CD9F005E1950 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357F7572CA2CD9F005E1950 /* SafariWebExtensionHandler.swift */; };
+		C357F7B22CA2CD9F005E1950 /* icon16.png in Resources */ = {isa = PBXBuildFile; fileRef = C357F7AB2CA2CD9F005E1950 /* icon16.png */; };
+		C357F7B32CA2CD9F005E1950 /* service-worker-loader.js in Resources */ = {isa = PBXBuildFile; fileRef = C357F7AC2CA2CD9F005E1950 /* service-worker-loader.js */; };
+		C357F7B42CA2CD9F005E1950 /* icon48.png in Resources */ = {isa = PBXBuildFile; fileRef = C357F7AD2CA2CD9F005E1950 /* icon48.png */; };
+		C357F7B52CA2CD9F005E1950 /* icon128.png in Resources */ = {isa = PBXBuildFile; fileRef = C357F7AE2CA2CD9F005E1950 /* icon128.png */; };
+		C357F7B62CA2CD9F005E1950 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C357F7AF2CA2CD9F005E1950 /* manifest.json */; };
+		C357F7B72CA2CD9F005E1950 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = C357F7B02CA2CD9F005E1950 /* assets */; };
+		C357F7B82CA2CD9F005E1950 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C357F7B12CA2CD9F005E1950 /* src */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C39583472C1B834600C19D1B /* PBXContainerItemProxy */ = {
+		C357F7872CA2CD9F005E1950 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C39583092C1B834500C19D1B /* Project object */;
+			containerPortal = C357F7492CA2CD9E005E1950 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C39583442C1B834600C19D1B;
+			remoteGlobalIDString = C357F7842CA2CD9F005E1950;
 			remoteInfo = "Paperlib Extension Extension (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C39583662C1B834600C19D1B /* Embed Foundation Extensions */ = {
+		C357F7A62CA2CD9F005E1950 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C39583462C1B834600C19D1B /* Paperlib Extension Extension.appex in Embed Foundation Extensions */,
+				C357F7862CA2CD9F005E1950 /* Paperlib Extension Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,39 +51,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C39583102C1B834500C19D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
-		C39583112C1B834500C19D1B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		C39583122C1B834500C19D1B /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
-		C39583132C1B834500C19D1B /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
-		C39583142C1B834500C19D1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C39583152C1B834600C19D1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C39583172C1B834600C19D1B /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		C395832E2C1B834600C19D1B /* Paperlib Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paperlib Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C39583302C1B834600C19D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C39583332C1B834600C19D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C39583352C1B834600C19D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C39583362C1B834600C19D1B /* Paperlib Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Paperlib Extension.entitlements"; sourceTree = "<group>"; };
-		C39583452C1B834600C19D1B /* Paperlib Extension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Paperlib Extension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C395834A2C1B834600C19D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C395834B2C1B834600C19D1B /* Paperlib Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Paperlib Extension.entitlements"; sourceTree = "<group>"; };
-		C395836B2C1B834600C19D1B /* icon16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon16.png; path = ../../dist/icon16.png; sourceTree = "<group>"; };
-		C395836C2C1B834600C19D1B /* service-worker-loader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "service-worker-loader.js"; path = "../../dist/service-worker-loader.js"; sourceTree = "<group>"; };
-		C395836D2C1B834600C19D1B /* icon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon48.png; path = ../../dist/icon48.png; sourceTree = "<group>"; };
-		C395836E2C1B834600C19D1B /* icon128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon128.png; path = ../../dist/icon128.png; sourceTree = "<group>"; };
-		C395836F2C1B834600C19D1B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../dist/manifest.json; sourceTree = "<group>"; };
-		C39583702C1B834600C19D1B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../dist/assets; sourceTree = "<group>"; };
-		C39583712C1B834600C19D1B /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../dist/src; sourceTree = "<group>"; };
+		C357F7502CA2CD9E005E1950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		C357F7512CA2CD9E005E1950 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C357F7522CA2CD9E005E1950 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		C357F7532CA2CD9E005E1950 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		C357F7542CA2CD9E005E1950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C357F7552CA2CD9F005E1950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C357F7572CA2CD9F005E1950 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		C357F76E2CA2CD9F005E1950 /* Paperlib Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paperlib Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C357F7702CA2CD9F005E1950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C357F7732CA2CD9F005E1950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C357F7752CA2CD9F005E1950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C357F7762CA2CD9F005E1950 /* Paperlib Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Paperlib Extension.entitlements"; sourceTree = "<group>"; };
+		C357F7852CA2CD9F005E1950 /* Paperlib Extension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Paperlib Extension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C357F78A2CA2CD9F005E1950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C357F78B2CA2CD9F005E1950 /* Paperlib Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Paperlib Extension.entitlements"; sourceTree = "<group>"; };
+		C357F7AB2CA2CD9F005E1950 /* icon16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon16.png; path = ../../dist/icon16.png; sourceTree = "<group>"; };
+		C357F7AC2CA2CD9F005E1950 /* service-worker-loader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "service-worker-loader.js"; path = "../../dist/service-worker-loader.js"; sourceTree = "<group>"; };
+		C357F7AD2CA2CD9F005E1950 /* icon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon48.png; path = ../../dist/icon48.png; sourceTree = "<group>"; };
+		C357F7AE2CA2CD9F005E1950 /* icon128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon128.png; path = ../../dist/icon128.png; sourceTree = "<group>"; };
+		C357F7AF2CA2CD9F005E1950 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../dist/manifest.json; sourceTree = "<group>"; };
+		C357F7B02CA2CD9F005E1950 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../dist/assets; sourceTree = "<group>"; };
+		C357F7B12CA2CD9F005E1950 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../dist/src; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C395832B2C1B834600C19D1B /* Frameworks */ = {
+		C357F76B2CA2CD9F005E1950 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C39583422C1B834600C19D1B /* Frameworks */ = {
+		C357F7822CA2CD9F005E1950 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,86 +93,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C39583082C1B834500C19D1B = {
+		C357F7482CA2CD9E005E1950 = {
 			isa = PBXGroup;
 			children = (
-				C395830D2C1B834500C19D1B /* Shared (App) */,
-				C39583162C1B834600C19D1B /* Shared (Extension) */,
-				C395832F2C1B834600C19D1B /* macOS (App) */,
-				C39583492C1B834600C19D1B /* macOS (Extension) */,
-				C395831D2C1B834600C19D1B /* Products */,
+				C357F74D2CA2CD9E005E1950 /* Shared (App) */,
+				C357F7562CA2CD9F005E1950 /* Shared (Extension) */,
+				C357F76F2CA2CD9F005E1950 /* macOS (App) */,
+				C357F7892CA2CD9F005E1950 /* macOS (Extension) */,
+				C357F75D2CA2CD9F005E1950 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C395830D2C1B834500C19D1B /* Shared (App) */ = {
+		C357F74D2CA2CD9E005E1950 /* Shared (App) */ = {
 			isa = PBXGroup;
 			children = (
-				C39583142C1B834500C19D1B /* ViewController.swift */,
-				C39583152C1B834600C19D1B /* Assets.xcassets */,
-				C395830E2C1B834500C19D1B /* Resources */,
+				C357F7542CA2CD9E005E1950 /* ViewController.swift */,
+				C357F7552CA2CD9F005E1950 /* Assets.xcassets */,
+				C357F74E2CA2CD9E005E1950 /* Resources */,
 			);
 			path = "Shared (App)";
 			sourceTree = "<group>";
 		};
-		C395830E2C1B834500C19D1B /* Resources */ = {
+		C357F74E2CA2CD9E005E1950 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C395830F2C1B834500C19D1B /* Main.html */,
-				C39583112C1B834500C19D1B /* Icon.png */,
-				C39583122C1B834500C19D1B /* Style.css */,
-				C39583132C1B834500C19D1B /* Script.js */,
+				C357F74F2CA2CD9E005E1950 /* Main.html */,
+				C357F7512CA2CD9E005E1950 /* Icon.png */,
+				C357F7522CA2CD9E005E1950 /* Style.css */,
+				C357F7532CA2CD9E005E1950 /* Script.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C39583162C1B834600C19D1B /* Shared (Extension) */ = {
+		C357F7562CA2CD9F005E1950 /* Shared (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				C395836A2C1B834600C19D1B /* Resources */,
-				C39583172C1B834600C19D1B /* SafariWebExtensionHandler.swift */,
+				C357F7AA2CA2CD9F005E1950 /* Resources */,
+				C357F7572CA2CD9F005E1950 /* SafariWebExtensionHandler.swift */,
 			);
 			path = "Shared (Extension)";
 			sourceTree = "<group>";
 		};
-		C395831D2C1B834600C19D1B /* Products */ = {
+		C357F75D2CA2CD9F005E1950 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C395832E2C1B834600C19D1B /* Paperlib Extension.app */,
-				C39583452C1B834600C19D1B /* Paperlib Extension Extension.appex */,
+				C357F76E2CA2CD9F005E1950 /* Paperlib Extension.app */,
+				C357F7852CA2CD9F005E1950 /* Paperlib Extension Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C395832F2C1B834600C19D1B /* macOS (App) */ = {
+		C357F76F2CA2CD9F005E1950 /* macOS (App) */ = {
 			isa = PBXGroup;
 			children = (
-				C39583302C1B834600C19D1B /* AppDelegate.swift */,
-				C39583322C1B834600C19D1B /* Main.storyboard */,
-				C39583352C1B834600C19D1B /* Info.plist */,
-				C39583362C1B834600C19D1B /* Paperlib Extension.entitlements */,
+				C357F7702CA2CD9F005E1950 /* AppDelegate.swift */,
+				C357F7722CA2CD9F005E1950 /* Main.storyboard */,
+				C357F7752CA2CD9F005E1950 /* Info.plist */,
+				C357F7762CA2CD9F005E1950 /* Paperlib Extension.entitlements */,
 			);
 			path = "macOS (App)";
 			sourceTree = "<group>";
 		};
-		C39583492C1B834600C19D1B /* macOS (Extension) */ = {
+		C357F7892CA2CD9F005E1950 /* macOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				C395834A2C1B834600C19D1B /* Info.plist */,
-				C395834B2C1B834600C19D1B /* Paperlib Extension.entitlements */,
+				C357F78A2CA2CD9F005E1950 /* Info.plist */,
+				C357F78B2CA2CD9F005E1950 /* Paperlib Extension.entitlements */,
 			);
 			path = "macOS (Extension)";
 			sourceTree = "<group>";
 		};
-		C395836A2C1B834600C19D1B /* Resources */ = {
+		C357F7AA2CA2CD9F005E1950 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C395836B2C1B834600C19D1B /* icon16.png */,
-				C395836C2C1B834600C19D1B /* service-worker-loader.js */,
-				C395836D2C1B834600C19D1B /* icon48.png */,
-				C395836E2C1B834600C19D1B /* icon128.png */,
-				C395836F2C1B834600C19D1B /* manifest.json */,
-				C39583702C1B834600C19D1B /* assets */,
-				C39583712C1B834600C19D1B /* src */,
+				C357F7AB2CA2CD9F005E1950 /* icon16.png */,
+				C357F7AC2CA2CD9F005E1950 /* service-worker-loader.js */,
+				C357F7AD2CA2CD9F005E1950 /* icon48.png */,
+				C357F7AE2CA2CD9F005E1950 /* icon128.png */,
+				C357F7AF2CA2CD9F005E1950 /* manifest.json */,
+				C357F7B02CA2CD9F005E1950 /* assets */,
+				C357F7B12CA2CD9F005E1950 /* src */,
 			);
 			name = Resources;
 			path = "Shared (Extension)";
@@ -181,32 +181,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C395832D2C1B834600C19D1B /* Paperlib Extension (macOS) */ = {
+		C357F76D2CA2CD9F005E1950 /* Paperlib Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C39583672C1B834600C19D1B /* Build configuration list for PBXNativeTarget "Paperlib Extension (macOS)" */;
+			buildConfigurationList = C357F7A72CA2CD9F005E1950 /* Build configuration list for PBXNativeTarget "Paperlib Extension (macOS)" */;
 			buildPhases = (
-				C395832A2C1B834600C19D1B /* Sources */,
-				C395832B2C1B834600C19D1B /* Frameworks */,
-				C395832C2C1B834600C19D1B /* Resources */,
-				C39583662C1B834600C19D1B /* Embed Foundation Extensions */,
+				C357F76A2CA2CD9F005E1950 /* Sources */,
+				C357F76B2CA2CD9F005E1950 /* Frameworks */,
+				C357F76C2CA2CD9F005E1950 /* Resources */,
+				C357F7A62CA2CD9F005E1950 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C39583482C1B834600C19D1B /* PBXTargetDependency */,
+				C357F7882CA2CD9F005E1950 /* PBXTargetDependency */,
 			);
 			name = "Paperlib Extension (macOS)";
 			productName = "Paperlib Extension (macOS)";
-			productReference = C395832E2C1B834600C19D1B /* Paperlib Extension.app */;
+			productReference = C357F76E2CA2CD9F005E1950 /* Paperlib Extension.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C39583442C1B834600C19D1B /* Paperlib Extension Extension (macOS) */ = {
+		C357F7842CA2CD9F005E1950 /* Paperlib Extension Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C39583632C1B834600C19D1B /* Build configuration list for PBXNativeTarget "Paperlib Extension Extension (macOS)" */;
+			buildConfigurationList = C357F7A32CA2CD9F005E1950 /* Build configuration list for PBXNativeTarget "Paperlib Extension Extension (macOS)" */;
 			buildPhases = (
-				C39583412C1B834600C19D1B /* Sources */,
-				C39583422C1B834600C19D1B /* Frameworks */,
-				C39583432C1B834600C19D1B /* Resources */,
+				C357F7812CA2CD9F005E1950 /* Sources */,
+				C357F7822CA2CD9F005E1950 /* Frameworks */,
+				C357F7832CA2CD9F005E1950 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -214,28 +214,28 @@
 			);
 			name = "Paperlib Extension Extension (macOS)";
 			productName = "Paperlib Extension Extension (macOS)";
-			productReference = C39583452C1B834600C19D1B /* Paperlib Extension Extension.appex */;
+			productReference = C357F7852CA2CD9F005E1950 /* Paperlib Extension Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C39583092C1B834500C19D1B /* Project object */ = {
+		C357F7492CA2CD9E005E1950 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					C395832D2C1B834600C19D1B = {
+					C357F76D2CA2CD9F005E1950 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					C39583442C1B834600C19D1B = {
+					C357F7842CA2CD9F005E1950 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = C395830C2C1B834500C19D1B /* Build configuration list for PBXProject "Paperlib Extension" */;
+			buildConfigurationList = C357F74C2CA2CD9E005E1950 /* Build configuration list for PBXProject "Paperlib Extension" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -243,88 +243,88 @@
 				en,
 				Base,
 			);
-			mainGroup = C39583082C1B834500C19D1B;
-			productRefGroup = C395831D2C1B834600C19D1B /* Products */;
+			mainGroup = C357F7482CA2CD9E005E1950;
+			productRefGroup = C357F75D2CA2CD9F005E1950 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C395832D2C1B834600C19D1B /* Paperlib Extension (macOS) */,
-				C39583442C1B834600C19D1B /* Paperlib Extension Extension (macOS) */,
+				C357F76D2CA2CD9F005E1950 /* Paperlib Extension (macOS) */,
+				C357F7842CA2CD9F005E1950 /* Paperlib Extension Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C395832C2C1B834600C19D1B /* Resources */ = {
+		C357F76C2CA2CD9F005E1950 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C395834F2C1B834600C19D1B /* Icon.png in Resources */,
-				C39583512C1B834600C19D1B /* Style.css in Resources */,
-				C39583342C1B834600C19D1B /* Base in Resources */,
-				C39583532C1B834600C19D1B /* Script.js in Resources */,
-				C39583572C1B834600C19D1B /* Assets.xcassets in Resources */,
-				C395834D2C1B834600C19D1B /* Base in Resources */,
+				C357F78F2CA2CD9F005E1950 /* Icon.png in Resources */,
+				C357F7912CA2CD9F005E1950 /* Style.css in Resources */,
+				C357F7742CA2CD9F005E1950 /* Base in Resources */,
+				C357F7932CA2CD9F005E1950 /* Script.js in Resources */,
+				C357F7972CA2CD9F005E1950 /* Assets.xcassets in Resources */,
+				C357F78D2CA2CD9F005E1950 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C39583432C1B834600C19D1B /* Resources */ = {
+		C357F7832CA2CD9F005E1950 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39583722C1B834600C19D1B /* icon16.png in Resources */,
-				C39583732C1B834600C19D1B /* service-worker-loader.js in Resources */,
-				C39583762C1B834600C19D1B /* manifest.json in Resources */,
-				C39583772C1B834600C19D1B /* assets in Resources */,
-				C39583752C1B834600C19D1B /* icon128.png in Resources */,
-				C39583782C1B834600C19D1B /* src in Resources */,
-				C39583742C1B834600C19D1B /* icon48.png in Resources */,
+				C357F7B22CA2CD9F005E1950 /* icon16.png in Resources */,
+				C357F7B32CA2CD9F005E1950 /* service-worker-loader.js in Resources */,
+				C357F7B62CA2CD9F005E1950 /* manifest.json in Resources */,
+				C357F7B72CA2CD9F005E1950 /* assets in Resources */,
+				C357F7B52CA2CD9F005E1950 /* icon128.png in Resources */,
+				C357F7B82CA2CD9F005E1950 /* src in Resources */,
+				C357F7B42CA2CD9F005E1950 /* icon48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C395832A2C1B834600C19D1B /* Sources */ = {
+		C357F76A2CA2CD9F005E1950 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39583552C1B834600C19D1B /* ViewController.swift in Sources */,
-				C39583312C1B834600C19D1B /* AppDelegate.swift in Sources */,
+				C357F7952CA2CD9F005E1950 /* ViewController.swift in Sources */,
+				C357F7712CA2CD9F005E1950 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C39583412C1B834600C19D1B /* Sources */ = {
+		C357F7812CA2CD9F005E1950 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39583592C1B834600C19D1B /* SafariWebExtensionHandler.swift in Sources */,
+				C357F7992CA2CD9F005E1950 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C39583482C1B834600C19D1B /* PBXTargetDependency */ = {
+		C357F7882CA2CD9F005E1950 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C39583442C1B834600C19D1B /* Paperlib Extension Extension (macOS) */;
-			targetProxy = C39583472C1B834600C19D1B /* PBXContainerItemProxy */;
+			target = C357F7842CA2CD9F005E1950 /* Paperlib Extension Extension (macOS) */;
+			targetProxy = C357F7872CA2CD9F005E1950 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C395830F2C1B834500C19D1B /* Main.html */ = {
+		C357F74F2CA2CD9E005E1950 /* Main.html */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C39583102C1B834500C19D1B /* Base */,
+				C357F7502CA2CD9E005E1950 /* Base */,
 			);
 			name = Main.html;
 			sourceTree = "<group>";
 		};
-		C39583322C1B834600C19D1B /* Main.storyboard */ = {
+		C357F7722CA2CD9F005E1950 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C39583332C1B834600C19D1B /* Base */,
+				C357F7732CA2CD9F005E1950 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -332,7 +332,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C395835A2C1B834600C19D1B /* Debug */ = {
+		C357F79A2CA2CD9F005E1950 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -393,7 +393,7 @@
 			};
 			name = Debug;
 		};
-		C395835B2C1B834600C19D1B /* Release */ = {
+		C357F79B2CA2CD9F005E1950 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -446,10 +446,11 @@
 			};
 			name = Release;
 		};
-		C39583642C1B834600C19D1B /* Debug */ = {
+		C357F7A42CA2CD9F005E1950 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Paperlib Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5G866JUZ55;
@@ -478,10 +479,11 @@
 			};
 			name = Debug;
 		};
-		C39583652C1B834600C19D1B /* Release */ = {
+		C357F7A52CA2CD9F005E1950 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Paperlib Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5G866JUZ55;
@@ -510,13 +512,14 @@
 			};
 			name = Release;
 		};
-		C39583682C1B834600C19D1B /* Debug */ = {
+		C357F7A82CA2CD9F005E1950 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Paperlib Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5G866JUZ55;
@@ -531,7 +534,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -546,13 +549,14 @@
 			};
 			name = Debug;
 		};
-		C39583692C1B834600C19D1B /* Release */ = {
+		C357F7A92CA2CD9F005E1950 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Paperlib Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5G866JUZ55;
@@ -567,7 +571,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -585,34 +589,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C395830C2C1B834500C19D1B /* Build configuration list for PBXProject "Paperlib Extension" */ = {
+		C357F74C2CA2CD9E005E1950 /* Build configuration list for PBXProject "Paperlib Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C395835A2C1B834600C19D1B /* Debug */,
-				C395835B2C1B834600C19D1B /* Release */,
+				C357F79A2CA2CD9F005E1950 /* Debug */,
+				C357F79B2CA2CD9F005E1950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C39583632C1B834600C19D1B /* Build configuration list for PBXNativeTarget "Paperlib Extension Extension (macOS)" */ = {
+		C357F7A32CA2CD9F005E1950 /* Build configuration list for PBXNativeTarget "Paperlib Extension Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C39583642C1B834600C19D1B /* Debug */,
-				C39583652C1B834600C19D1B /* Release */,
+				C357F7A42CA2CD9F005E1950 /* Debug */,
+				C357F7A52CA2CD9F005E1950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C39583672C1B834600C19D1B /* Build configuration list for PBXNativeTarget "Paperlib Extension (macOS)" */ = {
+		C357F7A72CA2CD9F005E1950 /* Build configuration list for PBXNativeTarget "Paperlib Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C39583682C1B834600C19D1B /* Debug */,
-				C39583692C1B834600C19D1B /* Release */,
+				C357F7A82CA2CD9F005E1950 /* Debug */,
+				C357F7A92CA2CD9F005E1950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C39583092C1B834500C19D1B /* Project object */;
+	rootObject = C357F7492CA2CD9E005E1950 /* Project object */;
 }
