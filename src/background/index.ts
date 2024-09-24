@@ -292,7 +292,7 @@ async function getBrowserTheme() {
         },
       },
       (result) => {
-        resolve(result[0].result)
+        resolve(result ? result[0].result : false)
       }
     )
   })) as boolean
